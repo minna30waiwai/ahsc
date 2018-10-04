@@ -12,8 +12,16 @@ public class find_active_objects_in_list : MonoBehaviour {
 		{
 			//シーン上に存在するオブジェクトならば処理
 			if(obj.activeInHierarchy){
+				/*
 				//GameObjectの名前を表示
 				Debug.Log(obj.name);
+				*/
+				//変数に代入
+				//var hoge =obj.name);
+				Debug.Log(obj.name+":position:"+obj.transform.position.ToString("F3"));
+				//Debug.Log(obj.name + ":local-position:" + obj.transform.localPosition.ToString("F3"));
+				Debug.Log(obj.name + ":rotation:" + obj.transform.rotation.ToString("F3"));
+				Debug.Log(obj.name + ":scale:" + obj.transform.localScale.ToString("F3"));
 			}
 		}
 		
