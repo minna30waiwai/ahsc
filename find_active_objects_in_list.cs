@@ -91,7 +91,8 @@ public class find_active_objects_in_list : MonoBehaviour {
 		//辞書内のKey,Valueを文字列として総出力
 		foreach(KeyValuePair<string,string> item in para_table)
 		{
-			csv_write_data += $"{item.Key}:{item.Value},";
+			//csv_write_data += $"{item.Key}:{item.Value},";
+			csv_write_data += item.Key + ":" + item.Value + ",";
 		}
 
 		csv_write(csv_write_data);
