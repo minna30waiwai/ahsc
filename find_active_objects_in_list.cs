@@ -48,9 +48,6 @@ public class find_active_objects_in_list : MonoBehaviour {
 
 		//position
 		//x,y,z=px,py,pz
-		var px = obj.transform.position.x.ToString("F4");
-		var py = obj.transform.position.y.ToString("F4");
-		var pz = obj.transform.position.z.ToString("F4");
 		//辞書に追加
 		para_table.Add("px", obj.transform.position.x.ToString("F4"));
 		para_table.Add("py", obj.transform.position.y.ToString("F4"));
@@ -58,10 +55,6 @@ public class find_active_objects_in_list : MonoBehaviour {
 
 		//rotation
 		//x,y,z,w=rx,ry,rz,rw
-		var rx = obj.transform.rotation.x.ToString("F4");
-		var ry = obj.transform.rotation.y.ToString("F4");
-		var rz = obj.transform.rotation.z.ToString("F4");
-		var rw = obj.transform.rotation.w.ToString("F4");
 		//辞書に追加
 		para_table.Add("rx", obj.transform.rotation.x.ToString("F4"));
 		para_table.Add("ry", obj.transform.rotation.y.ToString("F4"));
@@ -70,9 +63,6 @@ public class find_active_objects_in_list : MonoBehaviour {
 
 		//Scale
 		//x,y,z=sx,sy,sz
-		var sx = obj.transform.localScale.x.ToString("F4");
-		var sy = obj.transform.localScale.y.ToString("F4");
-		var sz = obj.transform.localScale.z.ToString("F4");
 		//辞書に追加
 		para_table.Add("sx", obj.transform.localScale.x.ToString("F4"));
 		para_table.Add("sy", obj.transform.localScale.y.ToString("F4"));
