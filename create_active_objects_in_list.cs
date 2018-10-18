@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class create_active_objects_in_list : MonoBehaviour {
+public class create_objects : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
-		csv_read();
+	void Start (string name) {
+		csv_read(name);
 	}
 
-	void csv_read(){
+	void csv_read(string name){
 
 		//入力用ファイル
 		var csv_file_path = Application.dataPath;
@@ -20,7 +20,7 @@ public class create_active_objects_in_list : MonoBehaviour {
 		string string_line;
 
 		//入力
-		using (var read_file=new System.IO.StreamReader(csv_file_path+@"save_csv\test.csv",System.Text.Encoding.GetEncoding("utf-8")))
+		using (var read_file=new System.IO.StreamReader(csv_file_path+@"save_csv\"+name+".csv",System.Text.Encoding.GetEncoding("utf-8")))
 		{
 			while(read_file.Peek()>=0){
 				string_line = string.Empty;
